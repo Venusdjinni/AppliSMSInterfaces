@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGrey"
+        tools:context="com.venus.app.applismsinterfaces.NewMessageActivity">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:paddingRight="16dp"
+                android:paddingEnd="16dp"
+                android:weightSum="1"
+                android:gravity="center_vertical"
+                android:id="@+id/newm_header">
+            <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:textSize="16sp"
+                    android:text="A:"/>
+            <Space android:layout_width="16dp" android:layout_height="wrap_content"/>
+            <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:inputType="textCapWords"
+                    android:layout_weight="1"
+                    android:id="@+id/newm_add"/>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/newm_header"
+                android:layout_above="@+id/newm_footer"
+                tools:listitem="@layout/item_groupe"
+                app:layoutManager="LinearLayoutManager"
+                android:id="@+id/newm_recyclerview"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingStart="8dp"
+                android:paddingRight="8dp"
+                android:paddingEnd="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:weightSum="1"
+                android:id="@+id/newm_footer">
+            <android.support.v7.widget.AppCompatEditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:layout_weight="1"
+                    android:maxLines="4"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:hint="Taper message"
+                    android:id="@+id/newm_text"/>
+            <Space android:layout_width="8dp" android:layout_height="wrap_content"/>
+            <android.support.design.widget.FloatingActionButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:backgroundTint="@color/colorDarkGrey"
+                    app:srcCompat="@drawable/ic_msg_send"
+                    android:id="@+id/newm_send"/>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

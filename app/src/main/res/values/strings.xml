@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Flux SMS</string>
+    <string name="short_lorem_ipsum">
+        Horum adventum praedocti speculationibus fidis rectores militum tessera data sollemni armatos omnes celeri
+        eduxere procursu et agiliter praeterito Calycadni fluminis ponte, cuius undarum magnitudo murorum adluit turres,
+        in speciem locavere pugnandi. neque tamen exiluit quisquam nec permissus est congredi. formidabatur enim
+        flagrans vesania manus et superior jour et ruitura sine respectu salutis in ferrum.
+    </string>
+    <string name="nb_membre">%d membre</string>
+    <string name="nb_membres">%d membres</string>
+    <string name="msg_envoyes">%d envoyés</string>
+    <string name="msg_total">%d au total</string>
+    <string name="msg_echecs">%d échecs</string>
+</resources>

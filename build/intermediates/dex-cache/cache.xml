@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/mnt/59296E7D2BC5697C/Android/Projets/AppliSMSInterfaces/app/libs/sugar-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="5f8a323697ff1f101f72a345b14185d76d7c4353">
+        <dex dex="/mnt/59296E7D2BC5697C/Android/Projets/AppliSMSInterfaces/app/build/intermediates/pre-dexed/debug/sugar-1.3_5251dc453d654fef8b19b898cf6b2eaac522df05.jar" />
+    </item>
+
+</items>
